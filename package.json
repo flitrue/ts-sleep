@@ -1,0 +1,39 @@
+{
+  "name": "promise-sleep",
+  "version": "1.0.0",
+  "description": "Async sleep function with typescript support.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "sleep",
+    "delay",
+    "promise",
+    "typescript"
+  ],
+  "author": "flitrue",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "performance-now": "^2.1.0",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  },
+  "jest": {
+    "testRegex": "test/.*.spec.ts",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:flitrue/promise-sleep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flitrue/promise-sleep/issues"
+  },
+  "homepage": "https://github.com/flitrue/promise-sleep#readme"
+}
