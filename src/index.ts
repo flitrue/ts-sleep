@@ -1,15 +1,20 @@
 type CancelablePromise = Promise<any> & { cancel: any }
 
 function sleep(timeout: number): CancelablePromise {
-  let res
+  let res: (v: string) => void, timer: NodeJS.Timer;
   let promise = new Promise(resolve => {
     res = resolve
-    setTimeout(() => {
+    timer = setTimeout(() => {
       resolve('done')
     }, timeout)
   }) as CancelablePromise
-  promise.cancel = res;
+  let cancel = function (data: string) {
+    res(data)
+    clearTimeout(timer)
+  }
+  promise.cancel = cancel;
   return promise
 }
 
 export default sleep;
+
