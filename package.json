@@ -1,5 +1,5 @@
 {
-  "name": "promise-sleep",
+  "name": "ts-sleep",
   "version": "1.0.0",
   "description": "Async sleep function with typescript support.",
   "main": "lib/index.js",
@@ -30,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:flitrue/promise-sleep.git"
+    "url": "git@github.com:flitrue/ts-sleep.git"
   },
   "bugs": {
-    "url": "https://github.com/flitrue/promise-sleep/issues"
+    "url": "https://github.com/flitrue/ts-sleep/issues"
   },
-  "homepage": "https://github.com/flitrue/promise-sleep#readme"
+  "homepage": "https://github.com/flitrue/ts-sleep#readme"
 }

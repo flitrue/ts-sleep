@@ -1,17 +1,17 @@
-# promise-sleep
+# ts-sleep
 
 Async sleep function with typescript support.
 
 ## Installation
 
 ```
-npm install sleep-promise -S
+npm install ts-promise -S
 ```
 
 ## Usage
 
 ```js
-import sleep from 'promise-sleep'
+import sleep from 'ts-sleep'
 
 function myFunction() {
   sleep(500).then(res => {
@@ -24,7 +24,7 @@ myFunction()
 
 Early suspend promise
 ```js
-import sleep from 'promise-sleep'
+import sleep from 'ts-sleep'
 
 function myFunction() {
   let p = sleep(500).then(res => {
